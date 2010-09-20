@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "URLEncodeString.h"
 
 @protocol TwtmoreDelegate
 
@@ -21,8 +20,8 @@
 	
 	NSString *apiKey;
 	NSString *apiUrl;
-	NSString *method;
-	bool staging;
+	NSString *apiMethod;
+	NSMutableDictionary *apiParams;
 	
 	id delegate;
 	
@@ -39,6 +38,8 @@
 - (id)initWithAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate;
 
 #pragma mark Methods
-- (void)shortenTweetWithUsername:(NSString *)username andTweet:(NSString *)tweet;
+- (void)setParam:(NSString *)param withValue:(NSString *)value;
+- (void)setMethod:(NSString *)APIMethod;
+- (void)startRequest;
 
 @end

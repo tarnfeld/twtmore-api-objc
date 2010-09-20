@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Twtmore.h"
+#import "URLEncodeString.h"
 
 @interface iPhone_LibraryViewController : UIViewController <TwtmoreDelegate> {
 

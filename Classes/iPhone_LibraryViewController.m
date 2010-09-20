@@ -14,16 +14,14 @@
 
 - (void)didReceiveResponseFromAPI:(NSString *)responseData ofMethod:(NSString *)method
 {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Shortened Tweet:" message:responseData delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-	[alert show];
-	[alert release];
+	NSLog(@"API Response Method: %@ Data: %@", method, responseData);
 }
 
 - (void)didReceiveErrorFromAPI:(NSString *)error
 {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"API Error" message:error delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-	[alert show];
-	[alert release];
+	
+	NSLog(@"%@", error);
+
 }
 
 #pragma mark ViewControllerMethods
@@ -35,8 +33,11 @@
 	NSString *tweet = [[NSString alloc] initWithString:@"Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque."];
 	
 	Twtmore *twtmore = [[Twtmore alloc] initWithStagingAPIKey:@"930093af638b6dfc3b885a658735eecd" andDelegate:self];
-	[twtmore shortenTweetWithUsername:@"twtmoretest" andTweet:tweet];
-	
+	[twtmore setMethod:@"shorten"];
+	[twtmore setParam:@"user" withValue:@"twtmoretest"];
+	[twtmore setParam:@"tweet" withValue:[tweet URLEncodeString]];
+	[twtmore startRequest];
+
 	[tweet release]; tweet = nil;
 	[twtmore release]; twtmore = nil;
 	

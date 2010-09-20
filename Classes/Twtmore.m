@@ -12,6 +12,7 @@
 @implementation Twtmore
 @synthesize delegate;
 
+#pragma mark InitMethods
 - (id)initWithAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate
 {
     if (self = [super init])
@@ -19,6 +20,9 @@
         apiKey = [NSString stringWithString:key];
 		apiUrl = [NSString stringWithFormat:@"http://api.twtmore.com"];
 		self.delegate = twtmoreDelegate;
+		
+		apiParams = [[NSMutableDictionary alloc] initWithObjects:nil forKeys:nil];
+		
     }
     return self;
 }
@@ -30,39 +34,56 @@
         apiKey = [NSString stringWithString:key];
 		apiUrl = [NSString stringWithFormat:@"http://api.twtmore.com"];
 		self.delegate = twtmoreDelegate;
-		staging = YES;
+		
+		apiParams = [[NSMutableDictionary alloc] initWithObjects:nil forKeys:nil];
+		[apiParams setValue:@"true" forKey:@"staging"];
+		
     }
     return self;
 }
 
-- (void)shortenTweetWithUsername:(NSString *)username andTweet:(NSString *)tweet
+#pragma mark Methods
+
+- (void)setMethod:(NSString *)method
+{
+	apiMethod= [NSString stringWithString:method];
+}
+
+- (void)setParam:(NSString *)param withValue:(NSString *)value
+{
+	[apiParams setValue:value forKey:param];
+}
+
+- (void)startRequest
 {
 	
-	method = [NSString stringWithFormat:@"shorten"];
-	
-	NSMutableString *body = [[NSMutableString alloc] initWithFormat:@"user=%@&tweet=%@", username, [tweet URLEncodeString]];
-	if(staging)
+	NSMutableString *body = [[NSMutableString alloc] initWithString:@""];
+	bool isFirst = YES;
+	for (id key in apiParams)
 	{
-		[body appendString:@"&staging=true"];
+		if (isFirst) {
+			[body appendFormat:@"%@=%@", key, [apiParams objectForKey:key]];
+		}
+		else {
+			[body appendFormat:@"&%@=%@", key, [apiParams objectForKey:key]];
+		}
+		isFirst = NO;
 	}
 	
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", apiUrl, method, apiKey]]];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", apiUrl, apiMethod, apiKey]]];
 	
 	[request setHTTPMethod:@"POST"];
 	[request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
 	
-	[body release]; body = nil;
-	
 	APIConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	
-	if(APIConnection) {
-		
+	if(APIConnection)
+	{
 		receivedData = [[NSMutableData data] retain];
 		
 	} else {
 		
 		[[self delegate] didReceiveErrorFromAPI:@"Error making connection"];
-		
 	}
 	
 }
@@ -102,11 +123,20 @@
 {
 	
 	NSString *data = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-	[[self delegate] didReceiveResponseFromAPI:data ofMethod:method];
+	[[self delegate] didReceiveResponseFromAPI:data ofMethod:apiMethod];
 	[data release];
 	
     [connection release];
     [receivedData release];
+}
+
+#pragma mark ObjectMethods
+- (void)dealloc
+{
+	
+    [super dealloc];
+	[apiParams release]; apiParams = nil;
+	
 }
 
 @end

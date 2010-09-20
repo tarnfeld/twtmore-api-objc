@@ -1,318 +1,0 @@
-TiPhone Library
-v7
-r0
-t306632345.727247
-cCheck dependencies
-cProcessInfoPlistFile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/Info.plist" iPhone_Library-Info.plist
-cCompileXIB "/twtmore/iPhone Library/MainWindow.xib"
-cCompileXIB "/twtmore/iPhone Library/iPhone_LibraryViewController.xib"
-cProcessPCH /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch.gch iPhone_Library_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/main.o" "/twtmore/iPhone Library/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryAppDelegate.o" "/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryViewController.o" "/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/Twtmore.o" "/twtmore/iPhone Library/Classes/Twtmore.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/URLEncodeString.o" "/twtmore/iPhone Library/Classes/URLEncodeString.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library" normal i386
-cGenerateDSYMFile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app.dSYM" "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library"
-cTouch "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004C9384DC0000000000000110
-t1284736220
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004C872F53000000000029B1D0
-t1283927891
-s2732496
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004C872FB1000000000029D590
-t1283927985
-s2741648
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004C872FA40000000000001466
-t1283927972
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C8741500000000000000AA1
-t1283932496
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C8741C10000000000735310
-t1283932609
-s7557904
-
-N/twtmore/iPhone Library/Classes/Twtmore.h
-c000000004C969E9F0000000000000392
-t1284939423
-s914
-i<Foundation/Foundation.h>
-i"URLEncodeString.h"
-
-N/twtmore/iPhone Library/Classes/Twtmore.m
-c000000004C969ED70000000000000ADB
-t1284939479
-s2779
-i"Twtmore.h"
-
-N/twtmore/iPhone Library/Classes/URLEncodeString.h
-c000000004C9699EC000000000000013C
-t1284938220
-s316
-i<Foundation/Foundation.h>
-
-N/twtmore/iPhone Library/Classes/URLEncodeString.m
-c000000004C969A11000000000000023F
-t1284938257
-s575
-i"URLEncodeString.h"
-
-N/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.h
-c000000004C96897C000000000000020B
-t1284934012
-s523
-i<UIKit/UIKit.h>
-
-N/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m
-c000000004C96897C0000000000000AB0
-t1284934012
-s2736
-i"iPhone_LibraryAppDelegate.h"
-i"iPhone_LibraryViewController.h"
-
-N/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.h
-c000000004C968ED2000000000000012F
-t1284935378
-s303
-i<UIKit/UIKit.h>
-i"Twtmore.h"
-
-N/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m
-c000000004C969F1700000000000005CB
-t1284939543
-s1483
-i"iPhone_LibraryViewController.h"
-
-N/twtmore/iPhone Library/MainWindow.xib
-c000000004C96897C0000000000004E7D
-t1284934012
-s20093
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app
-t1284939545
-s238
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app.dSYM
-t1284939545
-s102
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/Info.plist
-t1284935295
-s619
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/MainWindow.nib
-t1284935296
-s1137
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/PkgInfo
-t1284935295
-s8
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library
-t1284939545
-s25232
-
-N/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone_LibraryViewController.nib
-t1284935296
-s795
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/Twtmore.o
-t1284939481
-s19652
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/URLEncodeString.o
-t1284938360
-s8132
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone Library.LinkFileList
-c000000004C969A780000000000000298
-t1284938360
-s664
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryAppDelegate.o
-t1284939472
-s48808
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryViewController.o
-t1284939545
-s45192
-
-N/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/main.o
-t1284935298
-s6272
-
-N/twtmore/iPhone Library/iPhone_LibraryViewController.xib
-c000000004C96897C0000000000001A61
-t1284934012
-s6753
-
-N/twtmore/iPhone Library/iPhone_Library_Prefix.pch
-c000000004C96897C00000000000000C5
-t1284934012
-s197
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/twtmore/iPhone Library/main.m
-c000000004C96897C0000000000000172
-t1284934012
-s370
-i<UIKit/UIKit.h>
-
-N/var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch.gch
-t1284935297
-s15445200
-
-NiPhone_Library-Info.plist
-c000000004C96897C000000000000038D
-t1284934012
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies306632345#306632345#0(0"0(0#1#0"8650798944#0"0#
-
-CCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/Twtmore.o" "/twtmore/iPhone Library/Classes/Twtmore.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s306632281.010819
-e306632281.105714
-r1
-xCompileC
-xbuild/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/Twtmore.o
-x/twtmore/iPhone Library/Classes/Twtmore.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@49"Compile /twtmore/iPhone Library/Classes/Twtmore.m306632281#306632281#0(0"0(0#0#41"/twtmore/iPhone Library/Classes/Twtmore.m8633222848#1925"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -include /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch -c "/twtmore/iPhone Library/Classes/Twtmore.m" -o "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/Twtmore.o"0#
-
-CCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/URLEncodeString.o" "/twtmore/iPhone Library/Classes/URLEncodeString.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s306631160.874501
-e306631160.985587
-r1
-xCompileC
-xbuild/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/URLEncodeString.o
-x/twtmore/iPhone Library/Classes/URLEncodeString.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /twtmore/iPhone Library/Classes/URLEncodeString.m306631160#306631160#0(0"0(0#0#49"/twtmore/iPhone Library/Classes/URLEncodeString.m8596471008#1941"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -include /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch -c "/twtmore/iPhone Library/Classes/URLEncodeString.m" -o "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/URLEncodeString.o"0#
-
-CCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryAppDelegate.o" "/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s306632272.574117
-e306632272.831990
-r1
-xCompileC
-xbuild/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryAppDelegate.o
-x/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m306632272#306632272#0(0"0(0#0#59"/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m8628430464#1961"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -include /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch -c "/twtmore/iPhone Library/Classes/iPhone_LibraryAppDelegate.m" -o "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryAppDelegate.o"0#
-
-CCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryViewController.o" "/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s306632345.548508
-e306632345.625282
-r1
-xCompileC
-xbuild/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryViewController.o
-x/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m306632345#306632345#0(0"0(0#0#62"/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m8634383328#1967"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -include /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch -c "/twtmore/iPhone Library/Classes/iPhone_LibraryViewController.m" -o "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone_LibraryViewController.o"0#
-
-CCompileC "build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/main.o" "/twtmore/iPhone Library/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s306628097.843481
-e306628098.065855
-r1
-xCompileC
-xbuild/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/main.o
-x/twtmore/iPhone Library/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@38"Compile /twtmore/iPhone Library/main.m306628097#306628098#0(0"0(0#0#30"/twtmore/iPhone Library/main.m8621710784#1911"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -include /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch -c "/twtmore/iPhone Library/main.m" -o "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/main.o"0#
-
-CCompileXIB "/twtmore/iPhone Library/MainWindow.xib"
-s306628095.583974
-e306628096.187677
-r1
-xCompileXIB
-x/twtmore/iPhone Library/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib306628095#306628096#0(0"0(0#0#38"/twtmore/iPhone Library/MainWindow.xib8620244224#538"    cd "/twtmore/iPhone Library"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/MainWindow.nib" "/twtmore/iPhone Library/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB "/twtmore/iPhone Library/iPhone_LibraryViewController.xib"
-s306628095.593078
-e306628096.074091
-r1
-xCompileXIB
-x/twtmore/iPhone Library/iPhone_LibraryViewController.xib
-lSLF07#2@43"CompileXIB iPhone_LibraryViewController.xib306628095#306628096#0(0"0(0#0#56"/twtmore/iPhone Library/iPhone_LibraryViewController.xib8620181632#574"    cd "/twtmore/iPhone Library"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone_LibraryViewController.nib" "/twtmore/iPhone Library/iPhone_LibraryViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CGenerateDSYMFile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app.dSYM" "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library"
-s306632345.681568
-e306632345.723851
-r1
-xGenerateDSYMFile
-x/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app.dSYM
-x/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library
-lSLF07#2@134"GenerateDSYMFile "build/Debug-iphonesimulator/iPhone Library.app.dSYM" "build/Debug-iphonesimulator/iPhone Library.app/iPhone Library"306632345#306632345#0(0"0(0#0#85"/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library8631136960#365"    cd "/twtmore/iPhone Library"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library" -o "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app.dSYM"0#
-
-CLd "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library" normal i386
-s306632345.625381
-e306632345.681431
-r1
-xLd
-x/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library
-xnormal
-xi386
-lSLF07#2@90"Link /twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library306632345#306632345#0(0"0(0#0#0"8631248992#870"    cd "/twtmore/iPhone Library"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/twtmore/iPhone Library/build/Debug-iphonesimulator" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" -filelist "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/Objects-normal/i386/iPhone Library.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/iPhone Library"0#
-
-CProcessInfoPlistFile "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/Info.plist" iPhone_Library-Info.plist
-s306628095.537206
-e306628095.583829
-r1
-xProcessInfoPlistFile
-x/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/Info.plist
-xiPhone_Library-Info.plist
-lSLF07#2@33"Process iPhone_Library-Info.plist306628095#306628095#0(0"0(0#0#49"/twtmore/iPhone Library/iPhone_Library-Info.plist8241994560063676416#461"    cd "/twtmore/iPhone Library"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility iPhone_Library-Info.plist -genpkginfo "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app/Info.plist"0#
-
-CProcessPCH /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch.gch iPhone_Library_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s306628096.187842
-e306628097.843187
-r1
-xProcessPCH
-x/var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch.gch
-xiPhone_Library_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@36"Precompile iPhone_Library_Prefix.pch306628096#306628097#0(0"0(0#0#49"/twtmore/iPhone Library/iPhone_Library_Prefix.pch8621920224#1809"    cd "/twtmore/iPhone Library"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-generated-files.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-own-target-headers.hmap" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-all-target-headers.hmap" -iquote "/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/iPhone Library-project-headers.hmap" "-F/twtmore/iPhone Library/build/Debug-iphonesimulator" "-I/twtmore/iPhone Library/build/Debug-iphonesimulator/include" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources/i386" "-I/twtmore/iPhone Library/build/iPhone Library.build/Debug-iphonesimulator/iPhone Library.build/DerivedSources" -c "/twtmore/iPhone Library/iPhone_Library_Prefix.pch" -o /var/folders/hS/hSKWlsmeHS4SJlmcwozdL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Library_Prefix-dbzchdqwujliwhfjinibfslnnfso/iPhone_Library_Prefix.pch.gch0#
-
-CTouch "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app"
-s306632345.723972
-e306632345.727186
-r1
-xTouch
-x/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app
-lSLF07#2@76"Touch /twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app306632345#306632345#0(0"0(0#0#0"8650814336#259"    cd "/twtmore/iPhone Library"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/twtmore/iPhone Library/build/Debug-iphonesimulator/iPhone Library.app"0#
-
