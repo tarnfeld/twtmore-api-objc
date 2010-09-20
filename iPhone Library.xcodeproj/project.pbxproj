@@ -56,7 +56,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				53CF56F71246C146001836A3 /* Twtmore */,
+				53CF57611246D14A001836A3 /* URLEncodeString.h */,
+				53CF57621246D14A001836A3 /* URLEncodeString.m */,
+				53CF56F71246C146001836A3 /* Twtmore Library */,
 				1D3623240D0F684500981E51 /* iPhone_LibraryAppDelegate.h */,
 				1D3623250D0F684500981E51 /* iPhone_LibraryAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* iPhone_LibraryViewController.h */,
@@ -114,15 +116,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53CF56F71246C146001836A3 /* Twtmore */ = {
+		53CF56F71246C146001836A3 /* Twtmore Library */ = {
 			isa = PBXGroup;
 			children = (
 				53CF56F81246C153001836A3 /* Twtmore.h */,
 				53CF56F91246C153001836A3 /* Twtmore.m */,
-				53CF57611246D14A001836A3 /* URLEncodeString.h */,
-				53CF57621246D14A001836A3 /* URLEncodeString.m */,
 			);
-			name = Twtmore;
+			name = "Twtmore Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
