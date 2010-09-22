@@ -12,16 +12,19 @@
 
 #pragma mark TwtmoreDelegate
 
-- (void)didReceiveResponseFromAPI:(NSString *)responseData ofMethod:(NSString *)method
+- (void)didReceiveShortenedTweet:(NSString *)tweet
 {
-	NSLog(@"API Response Method: %@ Data: %@", method, responseData);
+	NSLog(@"Shortened Tweet ::: %@", tweet);
 }
 
-- (void)didReceiveErrorFromAPI:(NSString *)error
+- (void)didReceiveError:(NSString *)error
 {
-	
-	NSLog(@"%@", error);
+	NSLog(@"Error ::: %@", error);
+}
 
+- (void)didReceiveLongTweet:(NSString *)tweet
+{
+	NSLog(@"Long Tweet ::: %@", tweet);
 }
 
 #pragma mark ViewControllerMethods
@@ -32,11 +35,9 @@
 	
 	NSString *tweet = [[NSString alloc] initWithString:@"Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque."];
 	
-	Twtmore *twtmore = [[Twtmore alloc] initWithStagingAPIKey:@"930093af638b6dfc3b885a658735eecd" andDelegate:self];
-	[twtmore setMethod:@"shorten"];
-	[twtmore setParam:@"user" withValue:@"twtmoretest"];
-	[twtmore setParam:@"tweet" withValue:[tweet URLEncodeString]];
-	[twtmore startRequest];
+	Twtmore *twtmore = [[Twtmore alloc] initWithStagingAPIKey:@"930093af638b6dfc3b885a658735eecd"];
+	[twtmore setDelegate:self];
+	[twtmore shortenTweet:[tweet URLEncodeString] forUser:@"twtmoretest"];
 
 	[tweet release]; tweet = nil;
 	[twtmore release]; twtmore = nil;

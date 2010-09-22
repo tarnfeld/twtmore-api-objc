@@ -15,7 +15,8 @@
 		2899E5220DE3E06400AC0155 /* iPhone_LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* iPhone_LibraryViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* iPhone_LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* iPhone_LibraryViewController.m */; };
-		53CF56FA1246C153001836A3 /* Twtmore.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CF56F91246C153001836A3 /* Twtmore.m */; };
+		5364ED291248115E0090EE60 /* Twtmore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364ED281248115E0090EE60 /* Twtmore.m */; };
+		53CF56FA1246C153001836A3 /* TwtmoreAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CF56F91246C153001836A3 /* TwtmoreAPI.m */; };
 		53CF57631246D14A001836A3 /* URLEncodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CF57621246D14A001836A3 /* URLEncodeString.m */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +33,10 @@
 		28D7ACF70DDB3853001CB0EB /* iPhone_LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone_LibraryViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iPhone_Library_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Library_Prefix.pch; sourceTree = "<group>"; };
-		53CF56F81246C153001836A3 /* Twtmore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twtmore.h; sourceTree = "<group>"; };
-		53CF56F91246C153001836A3 /* Twtmore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twtmore.m; sourceTree = "<group>"; };
+		5364ED271248115E0090EE60 /* Twtmore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twtmore.h; sourceTree = "<group>"; };
+		5364ED281248115E0090EE60 /* Twtmore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twtmore.m; sourceTree = "<group>"; };
+		53CF56F81246C153001836A3 /* TwtmoreAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwtmoreAPI.h; sourceTree = "<group>"; };
+		53CF56F91246C153001836A3 /* TwtmoreAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwtmoreAPI.m; sourceTree = "<group>"; };
 		53CF57611246D14A001836A3 /* URLEncodeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLEncodeString.h; sourceTree = "<group>"; };
 		53CF57621246D14A001836A3 /* URLEncodeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLEncodeString.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iPhone_Library-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhone_Library-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -119,8 +122,10 @@
 		53CF56F71246C146001836A3 /* Twtmore Library */ = {
 			isa = PBXGroup;
 			children = (
-				53CF56F81246C153001836A3 /* Twtmore.h */,
-				53CF56F91246C153001836A3 /* Twtmore.m */,
+				53CF56F81246C153001836A3 /* TwtmoreAPI.h */,
+				53CF56F91246C153001836A3 /* TwtmoreAPI.m */,
+				5364ED271248115E0090EE60 /* Twtmore.h */,
+				5364ED281248115E0090EE60 /* Twtmore.m */,
 			);
 			name = "Twtmore Library";
 			sourceTree = "<group>";
@@ -192,8 +197,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* iPhone_LibraryAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* iPhone_LibraryViewController.m in Sources */,
-				53CF56FA1246C153001836A3 /* Twtmore.m in Sources */,
+				53CF56FA1246C153001836A3 /* TwtmoreAPI.m in Sources */,
 				53CF57631246D14A001836A3 /* URLEncodeString.m in Sources */,
+				5364ED291248115E0090EE60 /* Twtmore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

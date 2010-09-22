@@ -2,44 +2,39 @@
 //  Twtmore.h
 //  iPhone Library
 //
-//  Created by Tom Arnfeld on 19/09/2010.
+//  Created by Tom Arnfeld on 20/09/2010.
 //  Copyright 2010 Tom Arnfeld @ Twtmore. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "TwtmoreAPI.h"
 
 @protocol TwtmoreDelegate
 
-- (void)didReceiveResponseFromAPI:(NSString *)responseData ofMethod:(NSString *)method;
-- (void)didReceiveErrorFromAPI:(NSString *)error;
+- (void)didReceiveShortenedTweet:(NSString *)tweet;
+- (void)didReceiveError:(NSString *)error;
+- (void)didReceiveLongTweet:(NSString *)tweet;
 
 @end
 
+@interface Twtmore : NSObject <TwtmoreAPIDelegate> {
 
-@interface Twtmore : NSObject {
-	
-	NSString *apiKey;
-	NSString *apiUrl;
-	NSString *apiMethod;
-	NSMutableDictionary *apiParams;
-	
 	id delegate;
+	NSString *apiKey;
+	bool staging;
 	
-	NSURLConnection *APIConnection;
-	NSMutableData *receivedData;
-
+	TwtmoreAPI *twtmoreAPIObject;
+	
 }
 
 #pragma mark Properties
 @property (assign) id delegate;
 
 #pragma mark InitMethods
-- (id)initWithStagingAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate;
-- (id)initWithAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate;
+- (id)initWithStagingAPIKey:(NSString *)key;
+- (id)initWithAPIKey:(NSString *)key;
 
 #pragma mark Methods
-- (void)setParam:(NSString *)param withValue:(NSString *)value;
-- (void)setMethod:(NSString *)APIMethod;
-- (void)startRequest;
+- (void)shortenTweet:(NSString *)tweet forUser:(NSString *)user;
 
 @end

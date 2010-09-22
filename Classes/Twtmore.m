@@ -2,132 +2,72 @@
 //  Twtmore.m
 //  iPhone Library
 //
-//  Created by Tom Arnfeld on 19/09/2010.
+//  Created by Tom Arnfeld on 20/09/2010.
 //  Copyright 2010 Tom Arnfeld @ Twtmore. All rights reserved.
 //
 
 #import "Twtmore.h"
 
-
 @implementation Twtmore
 @synthesize delegate;
 
 #pragma mark InitMethods
-- (id)initWithAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate
+- (id)initWithAPIKey:(NSString *)key
 {
     if (self = [super init])
     {
-        apiKey = [NSString stringWithString:key];
-		apiUrl = [NSString stringWithFormat:@"http://api.twtmore.com"];
-		self.delegate = twtmoreDelegate;
-		
-		apiParams = [[NSMutableDictionary alloc] initWithObjects:nil forKeys:nil];
-		
+		apiKey = [NSString stringWithString:key];
+		staging = NO;
     }
     return self;
 }
 
-- (id)initWithStagingAPIKey:(NSString *)key andDelegate:(id)twtmoreDelegate
+- (id)initWithStagingAPIKey:(NSString *)key
 {
     if (self = [super init])
     {
-        apiKey = [NSString stringWithString:key];
-		apiUrl = [NSString stringWithFormat:@"http://api.twtmore.com"];
-		self.delegate = twtmoreDelegate;
-		
-		apiParams = [[NSMutableDictionary alloc] initWithObjects:nil forKeys:nil];
-		[apiParams setValue:@"true" forKey:@"staging"];
-		
+		apiKey = [NSString stringWithString:key];
+		staging = YES;
     }
     return self;
 }
 
 #pragma mark Methods
 
-- (void)setMethod:(NSString *)method
-{
-	apiMethod= [NSString stringWithString:method];
-}
-
-- (void)setParam:(NSString *)param withValue:(NSString *)value
-{
-	[apiParams setValue:value forKey:param];
-}
-
-- (void)startRequest
+- (void)shortenTweet:(NSString *)tweet forUser:(NSString *)user
 {
 	
-	NSMutableString *body = [[NSMutableString alloc] initWithString:@""];
-	bool isFirst = YES;
-	for (id key in apiParams)
+	twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
+	[twtmoreAPIObject setMethod:@"shorten"];
+	
+	[twtmoreAPIObject setParam:@"tweet" withValue:tweet];
+	[twtmoreAPIObject setParam:@"user" withValue:user];
+	
+	if(staging)
 	{
-		if (isFirst) {
-			[body appendFormat:@"%@=%@", key, [apiParams objectForKey:key]];
-		}
-		else {
-			[body appendFormat:@"&%@=%@", key, [apiParams objectForKey:key]];
-		}
-		isFirst = NO;
+		[twtmoreAPIObject setParam:@"staging" withValue:@"true"];
 	}
 	
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", apiUrl, apiMethod, apiKey]]];
+	[twtmoreAPIObject startRequest];
 	
-	[request setHTTPMethod:@"POST"];
-	[request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
+} 
+
+#pragma mark TwtmoreDelegateMethods
+
+- (void)didReceiveResponseFromAPI:(NSString *)responseData ofMethod:(NSString *)method
+{
 	
-	APIConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-	
-	if(APIConnection)
+	// Short Tweet
+	if([responseData isEqualToString:@"shorten"])
 	{
-		receivedData = [[NSMutableData data] retain];
-		
-	} else {
-		
-		[[self delegate] didReceiveErrorFromAPI:@"Error making connection"];
+		[self.delegate didReceiveShortenedTweet:responseData];
 	}
 	
 }
 
-#pragma mark NSURLConnectionDelegate
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+- (void)didReceiveErrorFromAPI:(NSString *)error
 {
-	
-	if([((NSHTTPURLResponse *)response) statusCode] >= 400)
-	{
-		[[self delegate] didReceiveErrorFromAPI:[NSString stringWithFormat:@"API Error: %i", [((NSHTTPURLResponse *)response) statusCode]]];
-		[connection cancel];
-	}
-	
-    [receivedData setLength:0];
-	
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-
-    [receivedData appendData:data];
-	
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-
-    [APIConnection release];
-    [receivedData release];
-	
-	[[self delegate] didReceiveErrorFromAPI:[NSString stringWithFormat:@"Connection Error: %@", [error localizedDescription]]];
-	
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-	
-	NSString *data = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-	[[self delegate] didReceiveResponseFromAPI:data ofMethod:apiMethod];
-	[data release];
-	
-    [connection release];
-    [receivedData release];
+	[self.delegate didReceiveErrorFromAPI:error];
 }
 
 #pragma mark ObjectMethods
@@ -135,8 +75,9 @@
 {
 	
     [super dealloc];
-	[apiParams release]; apiParams = nil;
+	[twtmoreAPIObject release]; twtmoreAPIObject = nil;
 	
 }
+	
 
 @end
