@@ -26,6 +26,7 @@
 	
 	NSURLConnection *APIConnection;
 	NSMutableData *receivedData;
+	NSString *apiData;
 
 }
 

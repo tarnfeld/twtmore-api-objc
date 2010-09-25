@@ -35,6 +35,7 @@
 - (id)initWithAPIKey:(NSString *)key;
 
 #pragma mark Methods
-- (void)shortenTweet:(NSString *)tweet forUser:(NSString *)user;
+- (void)shortenTweet:(NSString *)tweet forScreenName:(NSString *)user;
+- (void)getTweetContentForTweetId:(NSString *)tweetId;
 
 @end

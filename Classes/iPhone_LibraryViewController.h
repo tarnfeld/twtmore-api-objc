@@ -10,9 +10,28 @@
 #import "Twtmore.h"
 #import "URLEncodeString.h"
 
-@interface iPhone_LibraryViewController : UIViewController <TwtmoreDelegate> {
+@interface iPhone_LibraryViewController : UIViewController <TwtmoreDelegate, UITextViewDelegate> {
 
+	Twtmore *twtmore;
+	IBOutlet UITextView *textView;
+	IBOutlet UITextView *responseView;
+	IBOutlet UIButton *doneButton;
+	IBOutlet UIButton *shortenButton;
+	IBOutlet UIActivityIndicatorView *spinner;
+	IBOutlet UILabel *updatedTime;
+	
 }
+
+@property (nonatomic, retain) IBOutlet UITextView *textView;
+@property (nonatomic, retain) IBOutlet UITextView *responseView;
+@property (nonatomic, retain) IBOutlet UIButton *doneButton;
+@property (nonatomic, retain) IBOutlet UIButton *shortenButton;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *spinner;
+@property (nonatomic, retain) IBOutlet UILabel *updatedTime;
+
+- (IBAction)doneButtonPressed;
+- (IBAction)shortenTweet;
+- (void)updateTime;
 
 @end
 

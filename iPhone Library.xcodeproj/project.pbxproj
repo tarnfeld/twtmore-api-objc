@@ -15,6 +15,11 @@
 		2899E5220DE3E06400AC0155 /* iPhone_LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* iPhone_LibraryViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* iPhone_LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* iPhone_LibraryViewController.m */; };
+		534E23D7124E3CA600A9A15A /* buttonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 534E23D5124E3CA600A9A15A /* buttonDown.png */; };
+		534E23D8124E3CA600A9A15A /* buttonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 534E23D6124E3CA600A9A15A /* buttonUp.png */; };
+		534E23F6124E403C00A9A15A /* viewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 534E23F5124E403C00A9A15A /* viewBackground.png */; };
+		534E2495124E493700A9A15A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 534E2494124E493700A9A15A /* Default.png */; };
+		534E24A2124E49AD00A9A15A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 534E24A1124E49AD00A9A15A /* Icon.png */; };
 		5364ED291248115E0090EE60 /* Twtmore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364ED281248115E0090EE60 /* Twtmore.m */; };
 		53CF56FA1246C153001836A3 /* TwtmoreAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CF56F91246C153001836A3 /* TwtmoreAPI.m */; };
 		53CF57631246D14A001836A3 /* URLEncodeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CF57621246D14A001836A3 /* URLEncodeString.m */; };
@@ -33,6 +38,11 @@
 		28D7ACF70DDB3853001CB0EB /* iPhone_LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone_LibraryViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iPhone_Library_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Library_Prefix.pch; sourceTree = "<group>"; };
+		534E23D5124E3CA600A9A15A /* buttonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonDown.png; sourceTree = "<group>"; };
+		534E23D6124E3CA600A9A15A /* buttonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonUp.png; sourceTree = "<group>"; };
+		534E23F5124E403C00A9A15A /* viewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewBackground.png; sourceTree = "<group>"; };
+		534E2494124E493700A9A15A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		534E24A1124E49AD00A9A15A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		5364ED271248115E0090EE60 /* Twtmore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twtmore.h; sourceTree = "<group>"; };
 		5364ED281248115E0090EE60 /* Twtmore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twtmore.m; sourceTree = "<group>"; };
 		53CF56F81246C153001836A3 /* TwtmoreAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwtmoreAPI.h; sourceTree = "<group>"; };
@@ -102,9 +112,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				534E23F5124E403C00A9A15A /* viewBackground.png */,
+				534E23D5124E3CA600A9A15A /* buttonDown.png */,
+				534E23D6124E3CA600A9A15A /* buttonUp.png */,
 				2899E5210DE3E06400AC0155 /* iPhone_LibraryViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* iPhone_Library-Info.plist */,
+				534E2494124E493700A9A15A /* Default.png */,
+				534E24A1124E49AD00A9A15A /* Icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -184,6 +199,11 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* iPhone_LibraryViewController.xib in Resources */,
+				534E23D7124E3CA600A9A15A /* buttonDown.png in Resources */,
+				534E23D8124E3CA600A9A15A /* buttonUp.png in Resources */,
+				534E23F6124E403C00A9A15A /* viewBackground.png in Resources */,
+				534E2495124E493700A9A15A /* Default.png in Resources */,
+				534E24A2124E49AD00A9A15A /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

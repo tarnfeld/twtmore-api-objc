@@ -34,23 +34,38 @@
 
 #pragma mark Methods
 
-- (void)shortenTweet:(NSString *)tweet forUser:(NSString *)user
+- (void)shortenTweet:(NSString *)tweet forScreenName:(NSString *)user
 {
 	
-	twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
+	if(staging)
+	{
+		twtmoreAPIObject = [[TwtmoreAPI alloc] initWithStagingAPIKey:apiKey andDelegate:self];
+	}
+	else
+	{
+		twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
+	}
+	
 	[twtmoreAPIObject setMethod:@"shorten"];
 	
 	[twtmoreAPIObject setParam:@"tweet" withValue:tweet];
 	[twtmoreAPIObject setParam:@"user" withValue:user];
 	
-	if(staging)
-	{
-		[twtmoreAPIObject setParam:@"staging" withValue:@"true"];
-	}
+	[twtmoreAPIObject startRequest];
+	
+}
+
+- (void)getTweetContentForTweetId:(NSString *)tweetId
+{
+	
+	twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
+	[twtmoreAPIObject setMethod:@"get"];
+	
+	[twtmoreAPIObject setParam:@"id" withValue:tweetId];
 	
 	[twtmoreAPIObject startRequest];
 	
-} 
+}
 
 #pragma mark TwtmoreDelegateMethods
 
@@ -58,16 +73,22 @@
 {
 	
 	// Short Tweet
-	if([responseData isEqualToString:@"shorten"])
+	if([method isEqualToString:@"shorten"])
 	{
 		[self.delegate didReceiveShortenedTweet:responseData];
+	}
+	
+	// Tweet Content
+	if([method isEqualToString:@"get"])
+	{
+		[self.delegate didReceiveLongTweet:responseData];
 	}
 	
 }
 
 - (void)didReceiveErrorFromAPI:(NSString *)error
 {
-	[self.delegate didReceiveErrorFromAPI:error];
+	[self.delegate didReceiveError:error];
 }
 
 #pragma mark ObjectMethods

@@ -96,7 +96,7 @@
 	
 	if([((NSHTTPURLResponse *)response) statusCode] >= 400)
 	{
-		[self.delegate didReceiveErrorFromAPI:[NSString stringWithFormat:@"API Error: %i", [((NSHTTPURLResponse *)response) statusCode]]];
+		[self.delegate didReceiveErrorFromAPI:[NSString stringWithFormat:@"API Error %i", [((NSHTTPURLResponse *)response) statusCode]]];
 		[connection cancel];
 	}
 	
@@ -117,29 +117,33 @@
     [APIConnection release];
     [receivedData release];
 	
-	[self.delegate didReceiveErrorFromAPI:[NSString stringWithFormat:@"Connection Error: %@", [error localizedDescription]]];
+	[self.delegate didReceiveErrorFromAPI:[NSString stringWithFormat:@"Connection Error %@", [error localizedDescription]]];
 	
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	
-	NSString *data = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-	[self.delegate didReceiveResponseFromAPI:data ofMethod:apiMethod];
-	[data release];
+	apiData = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+	[self.delegate didReceiveResponseFromAPI:apiData ofMethod:apiMethod];
 	
     [APIConnection release];
     [receivedData release];
+	
 }
 
 #pragma mark ObjectMethods
 - (void)dealloc
 {
 	
-    [super dealloc];
+	[super dealloc];
 	if(apiMethod != nil)
 	{
 		[apiMethod release]; apiMethod = nil;
+	}
+	if(apiData != nil)
+	{
+		[apiData release]; apiData = nil;
 	}
 	[apiKey release]; apiKey = nil;
 	[apiUrl release]; apiUrl = nil;
