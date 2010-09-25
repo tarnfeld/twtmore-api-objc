@@ -233,6 +233,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -313,8 +315,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -329,10 +329,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>iPhone_LibraryViewController.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>534E24BC124E4C1900A9A15A</string>
 										<key>history</key>
 										<array>
 											<string>53CF57A21246DF31001836A3</string>
@@ -361,14 +357,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1132, 796}}</string>
+								<string>{{0, 0}, {1132, 795}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-543 -841 1440 841 -543 -900 1440 900 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>796pt</string>
+							<string>795pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -381,7 +377,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 801}, {1132, 0}}</string>
+								<string>{{0, 800}, {1132, 0}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-543 -841 1440 841 -543 -900 1440 900 </string>
 							</dict>
@@ -407,9 +403,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>534E2364124E357B00A9A15A</string>
+				<string>534E24C6124E4C4D00A9A15A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>534E2365124E357B00A9A15A</string>
+				<string>534E24C7124E4C4D00A9A15A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -547,12 +543,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>534E23A9124E389100A9A15A</string>
-		<string>534E238B124E37F400A9A15A</string>
-		<string>534E238C124E37F400A9A15A</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>53CF56F01246C119001836A3</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/twtmore/iPhone Library/iPhone Library.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -577,7 +570,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Twtmore.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -594,8 +587,6 @@
 							<string>317pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -635,7 +626,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>53CF56F01246C119001836A3</string>
-				<string>534E2366124E357B00A9A15A</string>
+				<string>534E24C8124E4C4D00A9A15A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -757,13 +748,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>534E2373124E36D100A9A15A</string>
+				<string>534E24C9124E4C4D00A9A15A</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>534E2374124E36D100A9A15A</string>
-				<string>534E2375124E36D100A9A15A</string>
-				<string>534E2376124E36D100A9A15A</string>
-				<string>534E2377124E36D100A9A15A</string>
-				<string>534E2378124E36D100A9A15A</string>
+				<string>534E24CA124E4C4D00A9A15A</string>
+				<string>534E24CB124E4C4D00A9A15A</string>
+				<string>534E24CC124E4C4D00A9A15A</string>
+				<string>534E24CD124E4C4D00A9A15A</string>
+				<string>534E24CE124E4C4D00A9A15A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -882,8 +873,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -919,7 +908,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>534E2379124E36D100A9A15A</string>
+				<string>534E24CF124E4C4D00A9A15A</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -929,7 +918,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
