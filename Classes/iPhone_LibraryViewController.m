@@ -24,8 +24,6 @@
 - (void)updateTime
 {
     
-    NSLog(@"Called to update the time!");
-    
 	NSDate *today = [NSDate date];	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 	
@@ -135,6 +133,7 @@
 - (void)dealloc
 {
     [lengthCounter release];
+    [navBar release];
     [super dealloc];
 	[twtmore release];
     twtmore = nil;

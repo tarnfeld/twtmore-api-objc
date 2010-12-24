@@ -14,7 +14,8 @@
 - (void)didReceiveShortenedTweet:(NSString *)tweet;
 - (void)didReceiveError:(NSString *)error;
 
-@optional - (void)didReceiveLongTweet:(NSString *)tweet;
+// Coming with twtmore API v2
+// @optional - (void)didReceiveLongTweet:(NSString *)tweet;
 
 @end
 

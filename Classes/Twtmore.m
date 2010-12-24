@@ -55,17 +55,18 @@
 	
 }
 
-- (void)getTweetContentForTweetId:(NSString *)tweetId
-{
-	
-	twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
-	[twtmoreAPIObject setMethod:@"get"];
-	
-	[twtmoreAPIObject setParam:@"id" withValue:tweetId];
-	
-	[twtmoreAPIObject startRequest];
-	
-}
+// Coming with twtmore API v2
+//- (void)getTweetContentForTweetId:(NSString *)tweetId
+//{
+//	
+//	twtmoreAPIObject = [[TwtmoreAPI alloc] initWithAPIKey:apiKey andDelegate:self];
+//	[twtmoreAPIObject setMethod:@"get"];
+//	
+//	[twtmoreAPIObject setParam:@"id" withValue:tweetId];
+//	
+//	[twtmoreAPIObject startRequest];
+//	
+//}
 
 #pragma mark TwtmoreDelegateMethods
 
