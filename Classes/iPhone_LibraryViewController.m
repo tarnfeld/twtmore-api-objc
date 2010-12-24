@@ -55,7 +55,7 @@
 	// twtmore = [[Twtmore alloc] initWithAPIKey:@"API_KEY_HERE"];
 	
 	// Please use this when testing tweets, saves short URLs
-	twtmore = [[Twtmore alloc] initWithStagingAPIKey:@"5cb2f94de6843d7dc69875687ce0bf0a"];
+	twtmore = [[Twtmore alloc] initWithStagingAPIKey:@"API_KEY_HERE"];
 	
 	// Set the delegate to be this object
 	[twtmore setDelegate:self];
