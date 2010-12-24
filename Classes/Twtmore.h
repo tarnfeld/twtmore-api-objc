@@ -13,7 +13,8 @@
 
 - (void)didReceiveShortenedTweet:(NSString *)tweet;
 - (void)didReceiveError:(NSString *)error;
-- (void)didReceiveLongTweet:(NSString *)tweet;
+
+@optional - (void)didReceiveLongTweet:(NSString *)tweet;
 
 @end
 

@@ -19,6 +19,7 @@
 	IBOutlet UIButton *shortenButton;
 	IBOutlet UIActivityIndicatorView *spinner;
 	IBOutlet UILabel *updatedTime;
+    UILabel *lengthCounter;
 	
 }
 
@@ -28,6 +29,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *shortenButton;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *spinner;
 @property (nonatomic, retain) IBOutlet UILabel *updatedTime;
+@property (nonatomic, retain) IBOutlet UILabel *lengthCounter;
 
 - (IBAction)doneButtonPressed;
 - (IBAction)shortenTweet;
