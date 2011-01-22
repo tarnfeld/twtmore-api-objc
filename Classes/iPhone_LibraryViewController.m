@@ -133,7 +133,6 @@
 - (void)dealloc
 {
     [lengthCounter release];
-    [navBar release];
     [super dealloc];
 	[twtmore release];
     twtmore = nil;

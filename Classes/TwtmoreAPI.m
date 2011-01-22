@@ -76,10 +76,11 @@
 	
 	[request setHTTPMethod:@"POST"];
 	[request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
+	[body release];
 	
 	APIConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	
-	if(APIConnection)
+	if (APIConnection)
 	{
 		receivedData = [[NSMutableData data] retain];
 		

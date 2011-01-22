@@ -13,9 +13,8 @@
 
 - (void)didReceiveShortenedTweet:(NSString *)tweet;
 - (void)didReceiveError:(NSString *)error;
-
 // Coming with twtmore API v2
-// @optional - (void)didReceiveLongTweet:(NSString *)tweet;
+@optional - (void)didReceiveLongTweet:(NSString *)tweet;
 
 @end
 
@@ -38,6 +37,7 @@
 
 #pragma mark Methods
 - (void)shortenTweet:(NSString *)tweet forScreenName:(NSString *)user;
-- (void)getTweetContentForTweetId:(NSString *)tweetId;
+// Coming with twtmore API v2
+//- (void)getTweetContentForTweetId:(NSString *)tweetId;
 
 @end
